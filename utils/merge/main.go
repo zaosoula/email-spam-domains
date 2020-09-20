@@ -17,7 +17,7 @@ var currentDir string
 func main() {
 	setCurrentDir()
 
-	files, err := ioutil.ReadDir(path.Join(currentDir, "..", "src"))
+	files, err := ioutil.ReadDir(path.Join(currentDir, "..", "..", "src"))
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -32,7 +32,7 @@ func main() {
 
 	for _, file := range files {
 
-		file, err := os.Open(path.Join(currentDir, "..", "src", file.Name()))
+		file, err := os.Open(path.Join(currentDir, "..", "..", "src", file.Name()))
 		if err != nil {
 			log.Fatal(err)
 		}
@@ -40,7 +40,9 @@ func main() {
 
 		scanner := bufio.NewScanner(file)
 		for scanner.Scan() {
-			_lines = append(_lines, scanner.Text())
+			if scanner.Text() != "" {
+				_lines = append(_lines, scanner.Text())
+			}
 		}
 	}
 
@@ -60,7 +62,7 @@ func main() {
 		}
 	}
 
-	err = ioutil.WriteFile(path.Join(currentDir, "..", "domains.txt"), []byte(strings.Join(lines, "\n")), 0664)
+	err = ioutil.WriteFile(path.Join(currentDir, "..", "..", "domains.txt"), []byte(strings.Join(lines, "\n")), 0664)
 	if err != nil {
 		log.Fatal(err)
 	}
