@@ -3,7 +3,6 @@ package main
 import (
 	"bufio"
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"log"
 	"os"
@@ -33,7 +32,6 @@ func main() {
 	}
 
 	jsonDomains, _ := json.Marshal(domains)
-	fmt.Println(string(jsonDomains))
 
 	err = ioutil.WriteFile(path.Join(currentDir, "..", "..", "domains.json"), []byte(string(jsonDomains)), 0664)
 	if err != nil {

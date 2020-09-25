@@ -16,7 +16,7 @@
 
 
   <p align="center">
-  A list of 94,548 spam/temporary email domain available in multiples formats
+  A list of 94,549 spam/temporary email domain available in multiples formats
     <br />
     <br />
     <a href="https://raw.githubusercontent.com/zaosoula/email-spam-domains/master/domains.txt">View .txt</a>
