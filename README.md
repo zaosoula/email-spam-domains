@@ -16,7 +16,7 @@
 
 
   <p align="center">
-  A list of 94,549 spam/temporary email domain available in multiples formats
+  A list of 98,522 spam/temporary email domain available in multiples formats
     <br />
     <br />
     <a href="https://raw.githubusercontent.com/zaosoula/email-spam-domains/master/domains.txt">View .txt</a>
@@ -49,11 +49,12 @@
 ## About The Project
 
 ### Sources
-
-* [MailChecker](https://github.com/FGRibreau/mailchecker/blob/master/list.txt)
+<small>Updated on 26 Oct 2020</small>
+* [MailChecker](https://github.com/FGRibreau/mailchecker/blob/master/list.txt)  
 * [StopForumsSpam](https://www.stopforumspam.com/downloads)
 * [Disposable Email Domain List](https://github.com/groundcat/disposable-email-domain-list/blob/master/domains.txt)
 * [Spam Domains List](https://github.com/tsirolnik/spam-domains-list/blob/master/spamdomains.txt)
+* [Our custom list](https://github.com/zaosoula/email-spam-domains/blob/master/src/custom.txt)
 
 ### Built With
 
